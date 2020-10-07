@@ -1,0 +1,418 @@
+Prefix(:=<https://nemo.inf.ufes.br/HCIO/hcio#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(hcio:=<https://nemo.inf.ufes.br/HCIO/hcio#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<https://nemo.inf.ufes.br/HCIO/hcio>
+Annotation(rdfs:label "HCIO"@en)
+Annotation(owl:versionInfo "1.2"@en)
+Annotation(hcio:creator "Simone Dornelas Costa, Ricardo de Almeida Falbo, Monalessa Perini Barcellos"@en)
+Annotation(hcio:description "The purpose of the Human-Computer Interaction Ontology (HCIO) is to establish an explicit and shared conceptualization about the HCI phenomenon, describing the main concepts involved in this phenomenon. HCIO is grounded in UFO and reuses concepts from the core System and Software Ontology (SysSwO). Given that a human-computer interaction involves communication between user and interactive computer system, HCIO is composed of sub-ontologies to deal with the interaction participants and with the interaction itself. The Interactive Computer System sub-ontology addresses what an interactive computer system is and its elements, including the user interface. The User sub-ontology focuses on the user and its possible actions when interacting with an interactive computer system. Finally, the HC Interaction sub-ontology links concepts from the other two sub-ontologies to define what a human-computer interaction is. HCIO is a core reference ontology about HCI phenomenon."@en)
+Annotation(hcio:title "Human-Computer Interaction Ontology - HCIO"@en)
+
+Declaration(Class(hcio:Atomic_User_Participation))
+Declaration(Class(hcio:Complex_Interactive_Computer_System))
+Declaration(Class(hcio:Complex_User_Participation))
+Declaration(Class(hcio:Computer_Machine))
+Declaration(Class(hcio:Hardware_Equipment))
+Declaration(Class(hcio:Human-Computer_Interaction))
+Declaration(Class(hcio:IO_Equipment))
+Declaration(Class(hcio:Input_Equipment))
+Declaration(Class(hcio:Intentional_User_Participation__User_Action))
+Declaration(Class(hcio:Interactive_Computer_System))
+Declaration(Class(hcio:Interactive_Computer_System_Participation))
+Declaration(Class(hcio:Interactive_Software_System))
+Declaration(Class(hcio:Loaded_Interactive_Software_System_Copy))
+Declaration(Class(hcio:Loaded_User_Interface_Program_Copy))
+Declaration(Class(hcio:Output_Equipment))
+Declaration(Class(hcio:Program_Copy_Execution))
+Declaration(Class(hcio:Unintentional_User_Participation))
+Declaration(Class(hcio:User))
+Declaration(Class(hcio:User_Goal))
+Declaration(Class(hcio:User_Initiated_Action))
+Declaration(Class(hcio:User_Initiated_Participation))
+Declaration(Class(hcio:User_Input_Resulting_State))
+Declaration(Class(hcio:User_Intention))
+Declaration(Class(hcio:User_Interface))
+Declaration(Class(hcio:User_Interface_Program))
+Declaration(Class(hcio:User_Interpretation))
+Declaration(Class(hcio:User_Observable_State))
+Declaration(Class(hcio:User_Participation))
+Declaration(ObjectProperty(hcio:bringsAbout))
+Declaration(ObjectProperty(hcio:causedBy))
+Declaration(ObjectProperty(hcio:causes))
+Declaration(ObjectProperty(hcio:composedOf))
+Declaration(ObjectProperty(hcio:connects))
+Declaration(ObjectProperty(hcio:constitutedOf))
+Declaration(ObjectProperty(hcio:directlyCauses))
+Declaration(ObjectProperty(hcio:executionOf))
+Declaration(ObjectProperty(hcio:handles))
+Declaration(ObjectProperty(hcio:has))
+Declaration(ObjectProperty(hcio:includes))
+Declaration(ObjectProperty(hcio:inheresIn))
+Declaration(ObjectProperty(hcio:interprets))
+Declaration(ObjectProperty(hcio:isDoneUsing))
+Declaration(ObjectProperty(hcio:materializationOf))
+Declaration(ObjectProperty(hcio:mayEvaluateAchievementOf))
+Declaration(ObjectProperty(hcio:participationOf))
+Declaration(ObjectProperty(hcio:presents))
+Declaration(ObjectProperty(hcio:propositionalContentOf))
+Declaration(ObjectProperty(hcio:supports))
+Declaration(ObjectProperty(hcio:triggers))
+Declaration(AnnotationProperty(hcio:SysSwO))
+Declaration(AnnotationProperty(hcio:UFO))
+Declaration(AnnotationProperty(hcio:creator))
+Declaration(AnnotationProperty(hcio:description))
+Declaration(AnnotationProperty(hcio:title))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: hcio:bringsAbout (hcio:bringsAbout)
+
+SubObjectPropertyOf(hcio:bringsAbout owl:topObjectProperty)
+FunctionalObjectProperty(hcio:bringsAbout)
+
+# Object Property: hcio:causedBy (hcio:causedBy)
+
+SubObjectPropertyOf(hcio:causedBy owl:topObjectProperty)
+FunctionalObjectProperty(hcio:causedBy)
+
+# Object Property: hcio:causes (hcio:causes)
+
+SubObjectPropertyOf(hcio:causes owl:topObjectProperty)
+TransitiveObjectProperty(hcio:causes)
+
+# Object Property: hcio:composedOf (hcio:composedOf)
+
+SubObjectPropertyOf(hcio:composedOf owl:topObjectProperty)
+SymmetricObjectProperty(hcio:composedOf)
+ReflexiveObjectProperty(hcio:composedOf)
+
+# Object Property: hcio:connects (hcio:connects)
+
+SubObjectPropertyOf(hcio:connects owl:topObjectProperty)
+FunctionalObjectProperty(hcio:connects)
+
+# Object Property: hcio:constitutedOf (hcio:constitutedOf)
+
+SubObjectPropertyOf(hcio:constitutedOf owl:topObjectProperty)
+FunctionalObjectProperty(hcio:constitutedOf)
+
+# Object Property: hcio:directlyCauses (hcio:directlyCauses)
+
+TransitiveObjectProperty(hcio:directlyCauses)
+ReflexiveObjectProperty(hcio:directlyCauses)
+
+# Object Property: hcio:executionOf (hcio:executionOf)
+
+SubObjectPropertyOf(hcio:executionOf owl:topObjectProperty)
+FunctionalObjectProperty(hcio:executionOf)
+
+# Object Property: hcio:handles (hcio:handles)
+
+SubObjectPropertyOf(hcio:handles owl:topObjectProperty)
+FunctionalObjectProperty(hcio:handles)
+
+# Object Property: hcio:has (hcio:has)
+
+SubObjectPropertyOf(hcio:has owl:topObjectProperty)
+FunctionalObjectProperty(hcio:has)
+
+# Object Property: hcio:includes (hcio:includes)
+
+SubObjectPropertyOf(hcio:includes owl:topObjectProperty)
+FunctionalObjectProperty(hcio:includes)
+
+# Object Property: hcio:inheresIn (hcio:inheresIn)
+
+SubObjectPropertyOf(hcio:inheresIn owl:topObjectProperty)
+FunctionalObjectProperty(hcio:inheresIn)
+
+# Object Property: hcio:interprets (hcio:interprets)
+
+SubObjectPropertyOf(hcio:interprets owl:topObjectProperty)
+FunctionalObjectProperty(hcio:interprets)
+
+# Object Property: hcio:isDoneUsing (hcio:isDoneUsing)
+
+SubObjectPropertyOf(hcio:isDoneUsing owl:topObjectProperty)
+FunctionalObjectProperty(hcio:isDoneUsing)
+
+# Object Property: hcio:materializationOf (hcio:materializationOf)
+
+SubObjectPropertyOf(hcio:materializationOf owl:topObjectProperty)
+FunctionalObjectProperty(hcio:materializationOf)
+
+# Object Property: hcio:mayEvaluateAchievementOf (hcio:mayEvaluateAchievementOf)
+
+SubObjectPropertyOf(hcio:mayEvaluateAchievementOf owl:topObjectProperty)
+FunctionalObjectProperty(hcio:mayEvaluateAchievementOf)
+
+# Object Property: hcio:participationOf (hcio:participationOf)
+
+SubObjectPropertyOf(hcio:participationOf owl:topObjectProperty)
+TransitiveObjectProperty(hcio:participationOf)
+
+# Object Property: hcio:presents (hcio:presents)
+
+SubObjectPropertyOf(hcio:presents owl:topObjectProperty)
+FunctionalObjectProperty(hcio:presents)
+
+# Object Property: hcio:propositionalContentOf (hcio:propositionalContentOf)
+
+SubObjectPropertyOf(hcio:propositionalContentOf owl:topObjectProperty)
+FunctionalObjectProperty(hcio:propositionalContentOf)
+
+# Object Property: hcio:supports (hcio:supports)
+
+SubObjectPropertyOf(hcio:supports owl:topObjectProperty)
+FunctionalObjectProperty(hcio:supports)
+
+# Object Property: hcio:triggers (hcio:triggers)
+
+SubObjectPropertyOf(hcio:triggers owl:topObjectProperty)
+FunctionalObjectProperty(hcio:triggers)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: hcio:Atomic_User_Participation (hcio:Atomic_User_Participation)
+
+AnnotationAssertion(rdfs:isDefinedBy hcio:Atomic_User_Participation "HCIO User Sub-Ontology"@en)
+AnnotationAssertion(hcio:description hcio:Atomic_User_Participation "Single User Participation. E.g., user touching her finger to unlock her mobile phone by using her fingerprint; user clicking a button."@en)
+SubClassOf(hcio:Atomic_User_Participation hcio:User_Participation)
+DisjointClasses(hcio:Atomic_User_Participation hcio:Complex_User_Participation)
+
+# Class: hcio:Complex_Interactive_Computer_System (hcio:Complex_Interactive_Computer_System)
+
+AnnotationAssertion(rdfs:isDefinedBy hcio:Complex_Interactive_Computer_System "HCIO Interactive Computer System Sub-Ontology"@en)
+AnnotationAssertion(hcio:description hcio:Complex_Interactive_Computer_System "Interactive Computer System composed of others Interactive Computer System. E.g., IoT in a smart home."@en)
+SubClassOf(hcio:Complex_Interactive_Computer_System hcio:Interactive_Computer_System)
+SubClassOf(hcio:Complex_Interactive_Computer_System ObjectSomeValuesFrom(hcio:composedOf hcio:Interactive_Computer_System))
+
+# Class: hcio:Complex_User_Participation (hcio:Complex_User_Participation)
+
+AnnotationAssertion(rdfs:isDefinedBy hcio:Complex_User_Participation "HCIO User Sub-Ontology"@en)
+AnnotationAssertion(hcio:description hcio:Complex_User_Participation "Participation composed of two or more User Participations. E.g., user typing her password and then answering security questions to log in the e-mail system."@en)
+SubClassOf(hcio:Complex_User_Participation hcio:User_Participation)
+SubClassOf(hcio:Complex_User_Participation ObjectSomeValuesFrom(hcio:composedOf hcio:User_Participation))
+
+# Class: hcio:Computer_Machine (hcio:Computer_Machine)
+
+AnnotationAssertion(rdfs:isDefinedBy hcio:Computer_Machine "SysSwO"@en)
+AnnotationAssertion(hcio:description hcio:Computer_Machine "Hardware Equipment able to run programs, processing, transforming and storing data. E.g., a notebook, a desktop computer, a mobile phone, a smart watch."@en)
+SubClassOf(hcio:Computer_Machine hcio:Hardware_Equipment)
+SubClassOf(hcio:Computer_Machine ObjectSomeValuesFrom(hcio:connects hcio:Hardware_Equipment))
+
+# Class: hcio:Hardware_Equipment (hcio:Hardware_Equipment)
+
+AnnotationAssertion(rdfs:isDefinedBy hcio:Hardware_Equipment "SysSwO"@en)
+AnnotationAssertion(hcio:UFO hcio:Hardware_Equipment "subtypeOf Object"@en)
+
+# Class: hcio:Human-Computer_Interaction (hcio:Human-Computer_Interaction)
+
+AnnotationAssertion(rdfs:isDefinedBy hcio:Human-Computer_Interaction "HCIO HC Interaction Sub-Ontology"@en)
+AnnotationAssertion(hcio:UFO hcio:Human-Computer_Interaction "subtypeOf Complex Action"@en)
+AnnotationAssertion(hcio:description hcio:Human-Computer_Interaction "An exchange of information (i.e., communication) between a User and an Interactive Computer System via the User Interface. E.g., user touching her finger to unlock her mobile phone by using her fingerprint and the mobile phone system showing a message informing that the fingerprint was not recognized; user entering a room, in a smart home, which automatically turns on the light."@en)
+SubClassOf(hcio:Human-Computer_Interaction ObjectSomeValuesFrom(hcio:composedOf hcio:Interactive_Computer_System_Participation))
+SubClassOf(hcio:Human-Computer_Interaction ObjectSomeValuesFrom(hcio:composedOf hcio:User_Participation))
+
+# Class: hcio:IO_Equipment (hcio:IO_Equipment)
+
+AnnotationAssertion(rdfs:isDefinedBy hcio:IO_Equipment "HCIO Interactive Computer System Sub-Ontology"@en)
+AnnotationAssertion(hcio:description hcio:IO_Equipment "Input and Output Equipment"@en)
+EquivalentClasses(hcio:IO_Equipment ObjectIntersectionOf(hcio:Input_Equipment hcio:Output_Equipment))
+
+# Class: hcio:Input_Equipment (hcio:Input_Equipment)
+
+AnnotationAssertion(rdfs:isDefinedBy hcio:Input_Equipment "HCIO Interactive Computer System Sub-Ontology"@en)
+AnnotationAssertion(hcio:description hcio:Input_Equipment "Hardware Equipment used to receive and transmit information or data from a User (input). E.g.: keyboard, mouse, sensors."@en)
+SubClassOf(hcio:Input_Equipment hcio:Hardware_Equipment)
+
+# Class: hcio:Intentional_User_Participation__User_Action (hcio:Intentional_User_Participation__User_Action)
+
+AnnotationAssertion(rdfs:isDefinedBy hcio:Intentional_User_Participation__User_Action "HCIO User Sub-Ontology"@en)
+AnnotationAssertion(hcio:UFO hcio:Intentional_User_Participation__User_Action "subtypeOf Action Contribution"@en)
+AnnotationAssertion(hcio:description hcio:Intentional_User_Participation__User_Action "User participation intentionally performed. E.g., user touching her finger to unlock her mobile phone by using her fingerprint; user clicking the send button to send an e-mail."@en)
+SubClassOf(hcio:Intentional_User_Participation__User_Action hcio:User_Participation)
+SubClassOf(hcio:Intentional_User_Participation__User_Action ObjectSomeValuesFrom(hcio:causedBy hcio:User_Intention))
+DisjointClasses(hcio:Intentional_User_Participation__User_Action hcio:Unintentional_User_Participation)
+
+# Class: hcio:Interactive_Computer_System (hcio:Interactive_Computer_System)
+
+AnnotationAssertion(rdfs:isDefinedBy hcio:Interactive_Computer_System "HCIO Interactive Computer System Sub-Ontology"@en)
+AnnotationAssertion(hcio:SysSwO hcio:Interactive_Computer_System "subtypeOf Computer System"@en)
+AnnotationAssertion(hcio:UFO hcio:Interactive_Computer_System "Computer System subtypeOf Object"@en)
+AnnotationAssertion(hcio:description hcio:Interactive_Computer_System "Computer System that combines User Interface, Computer Machine and Loaded Software System Copies, used to process, transform, store, display or transmit information or data by receiving input, and communicating output to Users. E.g., a desktop computer, its monitor, keyboard, mouse and software systems loaded in the computer (operational system, browser, text editor, etc.); smart watch; smart mobile phone."@en)
+SubClassOf(hcio:Interactive_Computer_System ObjectSomeValuesFrom(hcio:composedOf hcio:Computer_Machine))
+SubClassOf(hcio:Interactive_Computer_System ObjectSomeValuesFrom(hcio:composedOf hcio:Hardware_Equipment))
+SubClassOf(hcio:Interactive_Computer_System ObjectSomeValuesFrom(hcio:composedOf hcio:User_Interface))
+SubClassOf(hcio:Interactive_Computer_System ObjectSomeValuesFrom(hcio:has hcio:Loaded_Interactive_Software_System_Copy))
+
+# Class: hcio:Interactive_Computer_System_Participation (hcio:Interactive_Computer_System_Participation)
+
+AnnotationAssertion(rdfs:isDefinedBy hcio:Interactive_Computer_System_Participation "HCIO HC Interaction Sub-Ontology"@en)
+AnnotationAssertion(hcio:UFO hcio:Interactive_Computer_System_Participation "subtypeOf Object Participation"@en)
+AnnotationAssertion(hcio:description hcio:Interactive_Computer_System_Participation "The participation of an Interactive Computer System in a Human-Computer Interaction. E.g., the participation of the mobile phone system in the human-computer interaction in which the user touches her finger to unlock her mobile phone by using her fingerprint and the mobile phone system shows a message informing that the fingerprint was not recognized; the participation of the smart watch in the human-computer interaction in which the user uses the smart watch to monitor her heart pulse."@en)
+
+# Class: hcio:Interactive_Software_System (hcio:Interactive_Software_System)
+
+AnnotationAssertion(rdfs:isDefinedBy hcio:Interactive_Software_System "HCIO Interactive Computer System Sub-Ontology"@en)
+AnnotationAssertion(hcio:SysSwO hcio:Interactive_Software_System "subtypeOf Software System
+Software System subtypeOf Software Item"@en)
+AnnotationAssertion(hcio:UFO hcio:Interactive_Software_System "Software Item subtypeOf Object"@en)
+AnnotationAssertion(hcio:description hcio:Interactive_Software_System "Software system that includes, among other programs, User Interface Programs. E.g., a home banking system and its graphical programs that deals with user interface aspects."@en)
+SubClassOf(hcio:Interactive_Software_System ObjectSomeValuesFrom(hcio:constitutedOf hcio:User_Interface_Program))
+
+# Class: hcio:Loaded_Interactive_Software_System_Copy (hcio:Loaded_Interactive_Software_System_Copy)
+
+AnnotationAssertion(rdfs:isDefinedBy hcio:Loaded_Interactive_Software_System_Copy "HCIO Interactive Computer System Sub-Ontology"@en)
+AnnotationAssertion(hcio:SysSwO hcio:Loaded_Interactive_Software_System_Copy "subtypeOf Loaded Software System Copy"@en)
+AnnotationAssertion(hcio:UFO hcio:Loaded_Interactive_Software_System_Copy "Loaded Software System Copy subtypeOf Disposition"@en)
+AnnotationAssertion(hcio:description hcio:Loaded_Interactive_Software_System_Copy "Loaded Software System Copy that is the materialization of an Interactive Software System. E.g., the copy of the home banking system loaded in the computer of a certain user."@en)
+SubClassOf(hcio:Loaded_Interactive_Software_System_Copy ObjectSomeValuesFrom(hcio:includes hcio:Loaded_User_Interface_Program_Copy))
+SubClassOf(hcio:Loaded_Interactive_Software_System_Copy ObjectSomeValuesFrom(hcio:inheresIn hcio:Computer_Machine))
+SubClassOf(hcio:Loaded_Interactive_Software_System_Copy ObjectSomeValuesFrom(hcio:materializationOf hcio:Interactive_Software_System))
+
+# Class: hcio:Loaded_User_Interface_Program_Copy (hcio:Loaded_User_Interface_Program_Copy)
+
+AnnotationAssertion(rdfs:isDefinedBy hcio:Loaded_User_Interface_Program_Copy "HCIO Interactive Computer System Sub-Ontology"@en)
+AnnotationAssertion(hcio:SysSwO hcio:Loaded_User_Interface_Program_Copy "subtypeOf Loaded Program Copy"@en)
+AnnotationAssertion(hcio:UFO hcio:Loaded_User_Interface_Program_Copy "Loaded Program Copy subtypeOf Disposition"@en)
+AnnotationAssertion(hcio:description hcio:Loaded_User_Interface_Program_Copy "Loaded Program Copy that is the materialization of a User Interface Program. E.g., the copy of the programs that deal with interface aspects of the home banking system loaded in the computer of a certain user."@en)
+SubClassOf(hcio:Loaded_User_Interface_Program_Copy ObjectSomeValuesFrom(hcio:handles hcio:User_Interface))
+SubClassOf(hcio:Loaded_User_Interface_Program_Copy ObjectSomeValuesFrom(hcio:inheresIn hcio:Computer_Machine))
+SubClassOf(hcio:Loaded_User_Interface_Program_Copy ObjectSomeValuesFrom(hcio:materializationOf hcio:User_Interface_Program))
+
+# Class: hcio:Output_Equipment (hcio:Output_Equipment)
+
+AnnotationAssertion(rdfs:isDefinedBy hcio:Output_Equipment "HCIO Interactive Computer System Sub-Ontology"@en)
+AnnotationAssertion(hcio:description hcio:Output_Equipment "Hardware Equipment used to transmit or display information or data, communicating output to Users. E. g.: Monitor, speaker, etc."@en)
+SubClassOf(hcio:Output_Equipment hcio:Hardware_Equipment)
+SubClassOf(hcio:Output_Equipment ObjectSomeValuesFrom(hcio:presents hcio:User_Observable_State))
+SubClassOf(hcio:Output_Equipment ObjectSomeValuesFrom(hcio:supports hcio:User_Interpretation))
+
+# Class: hcio:Program_Copy_Execution (hcio:Program_Copy_Execution)
+
+AnnotationAssertion(rdfs:isDefinedBy hcio:Program_Copy_Execution "SysSwO"@en)
+AnnotationAssertion(hcio:UFO hcio:Program_Copy_Execution "subtypeOf Event"@en)
+SubClassOf(hcio:Program_Copy_Execution ObjectSomeValuesFrom(hcio:bringsAbout hcio:User_Observable_State))
+SubClassOf(hcio:Program_Copy_Execution ObjectSomeValuesFrom(hcio:directlyCauses hcio:Program_Copy_Execution))
+SubClassOf(hcio:Program_Copy_Execution ObjectSomeValuesFrom(hcio:directlyCauses hcio:User_Interpretation))
+SubClassOf(hcio:Program_Copy_Execution ObjectSomeValuesFrom(hcio:executionOf hcio:Loaded_User_Interface_Program_Copy))
+
+# Class: hcio:Unintentional_User_Participation (hcio:Unintentional_User_Participation)
+
+AnnotationAssertion(rdfs:isDefinedBy hcio:Unintentional_User_Participation "HCIO User Sub-Ontology"@en)
+AnnotationAssertion(hcio:description hcio:Unintentional_User_Participation "User participation unintentionally performed. E.g., a user walking and unintentionally giving information about number of steps to a monitoring system loaded in her smart watch; user entering a room, in a smart home, which automatically turns on the light."@en)
+SubClassOf(hcio:Unintentional_User_Participation hcio:User_Participation)
+
+# Class: hcio:User (hcio:User)
+
+AnnotationAssertion(rdfs:isDefinedBy hcio:User "HCIO User Sub-Ontology"@en)
+AnnotationAssertion(hcio:UFO hcio:User "subtypeOf Person"@en)
+AnnotationAssertion(hcio:description hcio:User "A Person who interacts with (or is expected to interact with) an Interactive Computer System. E.g., a person who uses a home banking system, smart watch or smart mobile phone."@en)
+DisjointClasses(hcio:User hcio:User_Intention)
+
+# Class: hcio:User_Goal (hcio:User_Goal)
+
+AnnotationAssertion(rdfs:isDefinedBy hcio:User_Goal "HCIO User Sub-Ontology"@en)
+AnnotationAssertion(hcio:UFO hcio:User_Goal "subtypeOf Goal"@en)
+AnnotationAssertion(hcio:description hcio:User_Goal "The propositional content of something the User wants to achieve (User Intention). E.g., the goal of buying fly tickets to go on vacation."@en)
+SubClassOf(hcio:User_Goal ObjectSomeValuesFrom(hcio:propositionalContentOf hcio:User_Intention))
+
+# Class: hcio:User_Initiated_Action (hcio:User_Initiated_Action)
+
+AnnotationAssertion(rdfs:isDefinedBy hcio:User_Initiated_Action "HCIO User Sub-Ontology"@en)
+AnnotationAssertion(hcio:description hcio:User_Initiated_Action "Intentional User Action of inputting data or information using an Input Equipment. E.g., user touching her finger to unlock her mobile phone by using her fingerprint; user clicking the send button to send an email."@en)
+EquivalentClasses(hcio:User_Initiated_Action ObjectIntersectionOf(hcio:Intentional_User_Participation__User_Action hcio:User_Initiated_Participation))
+
+# Class: hcio:User_Initiated_Participation (hcio:User_Initiated_Participation)
+
+AnnotationAssertion(rdfs:isDefinedBy hcio:User_Initiated_Participation "HCIO User Sub-Ontology"@en)
+AnnotationAssertion(hcio:description hcio:User_Initiated_Participation "Event in which a User inputs data or information using an Input Equipment. E.g., user touching her finger to unlock her mobile phone by using her fingerprint."@en)
+SubClassOf(hcio:User_Initiated_Participation hcio:User_Participation)
+SubClassOf(hcio:User_Initiated_Participation ObjectSomeValuesFrom(hcio:bringsAbout hcio:User_Input_Resulting_State))
+SubClassOf(hcio:User_Initiated_Participation ObjectSomeValuesFrom(hcio:causes hcio:User_Interpretation))
+SubClassOf(hcio:User_Initiated_Participation ObjectSomeValuesFrom(hcio:directlyCauses hcio:Program_Copy_Execution))
+SubClassOf(hcio:User_Initiated_Participation ObjectSomeValuesFrom(hcio:isDoneUsing hcio:Input_Equipment))
+DisjointClasses(hcio:User_Initiated_Participation hcio:User_Interpretation)
+
+# Class: hcio:User_Input_Resulting_State (hcio:User_Input_Resulting_State)
+
+AnnotationAssertion(rdfs:isDefinedBy hcio:User_Input_Resulting_State "HCIO HC Interaction Sub-Ontology"@en)
+AnnotationAssertion(hcio:UFO hcio:User_Input_Resulting_State "subtypeOf Situation"@en)
+AnnotationAssertion(hcio:description hcio:User_Input_Resulting_State "A situation achieved as the result of User’s input (data or information) received by means of an Input Equipment. E.g., the user fingerprint captured by the mobile phone system; the button clicked."@en)
+SubClassOf(hcio:User_Input_Resulting_State ObjectSomeValuesFrom(hcio:triggers hcio:Program_Copy_Execution))
+
+# Class: hcio:User_Intention (hcio:User_Intention)
+
+AnnotationAssertion(rdfs:isDefinedBy hcio:User_Intention "HCIO User Sub-Ontology"@en)
+AnnotationAssertion(hcio:UFO hcio:User_Intention "subtypeOf Intention"@en)
+AnnotationAssertion(hcio:description hcio:User_Intention "An Intention that inheres in a User, causing him to perform intentional user actions. E.g., the intention to travel on vacation."@en)
+SubClassOf(hcio:User_Intention ObjectSomeValuesFrom(hcio:inheresIn hcio:User))
+
+# Class: hcio:User_Interface (hcio:User_Interface)
+
+AnnotationAssertion(rdfs:isDefinedBy hcio:User_Interface "HCIO Interactive Computer System Sub-Ontology"@en)
+AnnotationAssertion(hcio:UFO hcio:User_Interface "subtypeOf Object"@en)
+AnnotationAssertion(hcio:description hcio:User_Interface "All components of an interactive system (software or hardware) that provide information and controls for the user to accomplish specific tasks with the interactive system. E.g., mouse, keyboard, monitor, sensors and the software that handle them."@en)
+SubClassOf(hcio:User_Interface ObjectSomeValuesFrom(hcio:composedOf hcio:Input_Equipment))
+SubClassOf(hcio:User_Interface ObjectSomeValuesFrom(hcio:composedOf hcio:Output_Equipment))
+
+# Class: hcio:User_Interface_Program (hcio:User_Interface_Program)
+
+AnnotationAssertion(rdfs:isDefinedBy hcio:User_Interface_Program "HCIO Interactive Computer System Sub-Ontology"@en)
+AnnotationAssertion(hcio:SysSwO hcio:User_Interface_Program "subtypeOf Program
+Program subtypeOf Software Item"@en)
+AnnotationAssertion(hcio:UFO hcio:User_Interface_Program "Software Item subtypeOf Object"@en)
+AnnotationAssertion(hcio:description hcio:User_Interface_Program "Program that deals with aspects related to the User Interface. E.g., the program responsible for the graphical user interface of the component that captures the user fingerprint to unlock a mobile phone."@en)
+
+# Class: hcio:User_Interpretation (hcio:User_Interpretation)
+
+AnnotationAssertion(rdfs:isDefinedBy hcio:User_Interpretation "HCIO User Sub-Ontology"@en)
+AnnotationAssertion(hcio:description hcio:User_Interpretation "Event in which a User interprets the system output. E.g., user interpreting a message from the mobile phone system informing that the captured fingerprint was not recognized; user sensing her smart watch vibrate; user hearing the notification sound of new message."@en)
+SubClassOf(hcio:User_Interpretation hcio:User_Participation)
+SubClassOf(hcio:User_Interpretation ObjectSomeValuesFrom(hcio:directlyCauses hcio:User_Initiated_Participation))
+SubClassOf(hcio:User_Interpretation ObjectSomeValuesFrom(hcio:interprets hcio:User_Observable_State))
+SubClassOf(hcio:User_Interpretation ObjectSomeValuesFrom(hcio:mayEvaluateAchievementOf hcio:User_Goal))
+
+# Class: hcio:User_Observable_State (hcio:User_Observable_State)
+
+AnnotationAssertion(rdfs:isDefinedBy hcio:User_Observable_State "HCIO Interactive HC Interaction Sub-Ontology"@en)
+AnnotationAssertion(hcio:SysSwO hcio:User_Observable_State "subtypeOf Computing Resulting State"@en)
+AnnotationAssertion(hcio:UFO hcio:User_Observable_State "Computing Resulting State subtypeOf Situation"@en)
+AnnotationAssertion(hcio:description hcio:User_Observable_State "A situation (an Observable State) perceivable by Users, typically achieved as the result (output) of a Program Copy Execution, communicated or presented by an Output Equipment. E.g., a message shown in the mobile phone screen informing the user that the captured fingerprint was not recognized, smart watch vibrating; sounds emitted by the mobile phone."@en)
+SubClassOf(hcio:User_Observable_State ObjectSomeValuesFrom(hcio:triggers hcio:Program_Copy_Execution))
+SubClassOf(hcio:User_Observable_State ObjectSomeValuesFrom(hcio:triggers hcio:User_Interpretation))
+
+# Class: hcio:User_Participation (hcio:User_Participation)
+
+AnnotationAssertion(rdfs:isDefinedBy hcio:User_Participation "HCIO User Sub-Ontology"@en)
+AnnotationAssertion(hcio:UFO hcio:User_Participation "subtypeOf Action Contribution"@en)
+AnnotationAssertion(hcio:description hcio:User_Participation "Event in which the user participates in a Human-Computer Interaction. E.g., user walking and unintentionally giving information about number of steps to a monitoring system loaded in her smart watch; user touching her finger to unlock her mobile phone by using her fingerprint; user interpreting a message from the mobile phone system informing that the captured fingerprint was not recognized."@en)
+SubClassOf(hcio:User_Participation ObjectSomeValuesFrom(hcio:participationOf hcio:User))
+
+
+DisjointClasses(hcio:Computer_Machine hcio:Input_Equipment hcio:Output_Equipment)
+DisjointClasses(hcio:Computer_Machine hcio:User hcio:User_Goal hcio:User_Intention hcio:User_Observable_State hcio:User_Participation)
+DisjointClasses(hcio:Computer_Machine hcio:User hcio:User_Goal hcio:User_Intention hcio:User_Participation)
+DisjointClasses(hcio:Hardware_Equipment hcio:Human-Computer_Interaction hcio:Interactive_Computer_System hcio:Interactive_Computer_System_Participation hcio:Interactive_Software_System hcio:Loaded_Interactive_Software_System_Copy hcio:Loaded_User_Interface_Program_Copy hcio:Program_Copy_Execution hcio:User hcio:User_Goal hcio:User_Input_Resulting_State hcio:User_Intention hcio:User_Interface hcio:User_Interface_Program hcio:User_Observable_State hcio:User_Participation)
+DisjointClasses(hcio:Hardware_Equipment hcio:Human-Computer_Interaction hcio:Interactive_Computer_System hcio:Interactive_Computer_System_Participation hcio:Interactive_Software_System hcio:Loaded_Interactive_Software_System_Copy hcio:Loaded_User_Interface_Program_Copy hcio:User hcio:User_Goal hcio:User_Input_Resulting_State hcio:User_Intention hcio:User_Interface hcio:User_Interface_Program hcio:User_Observable_State hcio:User_Participation)
+DisjointClasses(hcio:Hardware_Equipment hcio:Interactive_Computer_System hcio:Interactive_Computer_System_Participation hcio:Interactive_Software_System hcio:Loaded_Interactive_Software_System_Copy hcio:Loaded_User_Interface_Program_Copy hcio:User hcio:User_Goal hcio:User_Input_Resulting_State hcio:User_Intention hcio:User_Interface hcio:User_Interface_Program hcio:User_Observable_State hcio:User_Participation)
+DisjointClasses(hcio:Hardware_Equipment hcio:Interactive_Computer_System hcio:Interactive_Software_System hcio:Loaded_Interactive_Software_System_Copy hcio:Loaded_User_Interface_Program_Copy hcio:User hcio:User_Goal hcio:User_Input_Resulting_State hcio:User_Intention hcio:User_Interface hcio:User_Interface_Program hcio:User_Participation)
+DisjointClasses(hcio:Hardware_Equipment hcio:Interactive_Computer_System hcio:Interactive_Software_System hcio:Loaded_Interactive_Software_System_Copy hcio:Loaded_User_Interface_Program_Copy hcio:User hcio:User_Goal hcio:User_Intention hcio:User_Interface hcio:User_Interface_Program hcio:User_Observable_State hcio:User_Participation)
+DisjointClasses(hcio:Hardware_Equipment hcio:User hcio:User_Goal hcio:User_Intention hcio:User_Observable_State hcio:User_Participation)
+DisjointClasses(hcio:User hcio:User_Goal hcio:User_Initiated_Action hcio:User_Intention)
+DisjointClasses(hcio:User hcio:User_Goal hcio:User_Intention)
+DisjointClasses(hcio:User hcio:User_Goal hcio:User_Intention hcio:User_Participation)
+)

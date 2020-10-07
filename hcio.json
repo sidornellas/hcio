@@ -1,0 +1,2522 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.7), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en" ],
+    "baseIris" : [ "https://nemo.inf.ufes.br/HCIO/hcio", "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema" ],
+    "prefixList" : {
+      "hcio" : "https://nemo.inf.ufes.br/HCIO/hcio#",
+      "owl" : "http://www.w3.org/2002/07/owl#",
+      "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "xsd" : "http://www.w3.org/2001/XMLSchema#",
+      "" : "https://nemo.inf.ufes.br/HCIO/hcio#",
+      "xml" : "http://www.w3.org/XML/1998/namespace",
+      "rdfs" : "http://www.w3.org/2000/01/rdf-schema#"
+    },
+    "title" : {
+      "en" : "Human-Computer Interaction Ontology - HCIO"
+    },
+    "iri" : "https://nemo.inf.ufes.br/HCIO/hcio",
+    "version" : "1.2",
+    "author" : [ "Simone Dornelas Costa, Ricardo de Almeida Falbo, Monalessa Perini Barcellos" ],
+    "description" : {
+      "en" : "The purpose of the Human-Computer Interaction Ontology (HCIO) is to establish an explicit and shared conceptualization about the HCI phenomenon, describing the main concepts involved in this phenomenon. HCIO is grounded in UFO and reuses concepts from the core System and Software Ontology (SysSwO). Given that a human-computer interaction involves communication between user and interactive computer system, HCIO is composed of sub-ontologies to deal with the interaction participants and with the interaction itself. The Interactive Computer System sub-ontology addresses what an interactive computer system is and its elements, including the user interface. The User sub-ontology focuses on the user and its possible actions when interacting with an interactive computer system. Finally, the HC Interaction sub-ontology links concepts from the other two sub-ontologies to define what a human-computer interaction is. HCIO is a core reference ontology about HCI phenomenon."
+    },
+    "labels" : {
+      "en" : "HCIO"
+    },
+    "other" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "en",
+        "value" : "Simone Dornelas Costa, Ricardo de Almeida Falbo, Monalessa Perini Barcellos",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "en",
+        "value" : "1.2",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "Human-Computer Interaction Ontology - HCIO",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "40",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "63",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "64",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "69",
+    "type" : "owl:Class"
+  }, {
+    "id" : "58",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "78",
+    "type" : "owl:Class"
+  }, {
+    "id" : "56",
+    "type" : "owl:Class"
+  }, {
+    "id" : "73",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "61",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "100",
+    "type" : "owl:Class"
+  }, {
+    "id" : "52",
+    "type" : "owl:Class"
+  }, {
+    "id" : "42",
+    "type" : "owl:Class"
+  }, {
+    "id" : "66",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "54",
+    "type" : "owl:Class"
+  }, {
+    "id" : "72",
+    "type" : "owl:Class"
+  }, {
+    "id" : "192",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "44",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "67",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://nemo.inf.ufes.br/HCIO/hcio#Unintentional_User_Participation",
+    "baseIri" : "https://nemo.inf.ufes.br/HCIO/hcio",
+    "instances" : 0,
+    "description" : {
+      "en" : "User participation unintentionally performed. E.g., a user walking and unintentionally giving information about number of steps to a monitoring system loaded in her smart watch; user entering a room, in a smart home, which automatically turns on the light."
+    },
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "en",
+        "value" : "HCIO User Sub-Ontology",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Unintentional_User_Participation"
+    },
+    "id" : "40",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "https://nemo.inf.ufes.br/HCIO/hcio#Interactive_Computer_System_Participation",
+    "baseIri" : "https://nemo.inf.ufes.br/HCIO/hcio",
+    "instances" : 0,
+    "description" : {
+      "en" : "The participation of an Interactive Computer System in a Human-Computer Interaction. E.g., the participation of the mobile phone system in the human-computer interaction in which the user touches her finger to unlock her mobile phone by using her fingerprint and the mobile phone system shows a message informing that the fingerprint was not recognized; the participation of the smart watch in the human-computer interaction in which the user uses the smart watch to monitor her heart pulse."
+    },
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "en",
+        "value" : "HCIO HC Interaction Sub-Ontology",
+        "type" : "label"
+      } ],
+      "UFO" : [ {
+        "identifier" : "UFO",
+        "language" : "en",
+        "value" : "subtypeOf Object Participation",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Interactive_Computer_System_Participation"
+    },
+    "id" : "11"
+  }, {
+    "iri" : "https://nemo.inf.ufes.br/HCIO/hcio#Complex_Interactive_Computer_System",
+    "baseIri" : "https://nemo.inf.ufes.br/HCIO/hcio",
+    "instances" : 0,
+    "description" : {
+      "en" : "Interactive Computer System composed of others Interactive Computer System. E.g., IoT in a smart home."
+    },
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "en",
+        "value" : "HCIO Interactive Computer System Sub-Ontology",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Complex_Interactive_Computer_System"
+    },
+    "id" : "63",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "https://nemo.inf.ufes.br/HCIO/hcio#Loaded_Interactive_Software_System_Copy",
+    "baseIri" : "https://nemo.inf.ufes.br/HCIO/hcio",
+    "instances" : 0,
+    "description" : {
+      "en" : "Loaded Software System Copy that is the materialization of an Interactive Software System. E.g., the copy of the home banking system loaded in the computer of a certain user."
+    },
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "en",
+        "value" : "HCIO Interactive Computer System Sub-Ontology",
+        "type" : "label"
+      } ],
+      "SysSwO" : [ {
+        "identifier" : "SysSwO",
+        "language" : "en",
+        "value" : "subtypeOf Loaded Software System Copy",
+        "type" : "label"
+      } ],
+      "UFO" : [ {
+        "identifier" : "UFO",
+        "language" : "en",
+        "value" : "Loaded Software System Copy subtypeOf Disposition",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Loaded_Interactive_Software_System_Copy"
+    },
+    "id" : "15"
+  }, {
+    "iri" : "https://nemo.inf.ufes.br/HCIO/hcio#Computer_Machine",
+    "baseIri" : "https://nemo.inf.ufes.br/HCIO/hcio",
+    "instances" : 0,
+    "description" : {
+      "en" : "Hardware Equipment able to run programs, processing, transforming and storing data. E.g., a notebook, a desktop computer, a mobile phone, a smart watch."
+    },
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "en",
+        "value" : "SysSwO",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Computer_Machine"
+    },
+    "id" : "64",
+    "superClasses" : [ "61" ]
+  }, {
+    "iri" : "https://nemo.inf.ufes.br/HCIO/hcio#User_Interface_Program",
+    "baseIri" : "https://nemo.inf.ufes.br/HCIO/hcio",
+    "instances" : 0,
+    "description" : {
+      "en" : "Program that deals with aspects related to the User Interface. E.g., the program responsible for the graphical user interface of the component that captures the user fingerprint to unlock a mobile phone."
+    },
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "en",
+        "value" : "HCIO Interactive Computer System Sub-Ontology",
+        "type" : "label"
+      } ],
+      "SysSwO" : [ {
+        "identifier" : "SysSwO",
+        "language" : "en",
+        "value" : "subtypeOf Program\nProgram subtypeOf Software Item",
+        "type" : "label"
+      } ],
+      "UFO" : [ {
+        "identifier" : "UFO",
+        "language" : "en",
+        "value" : "Software Item subtypeOf Object",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "User_Interface_Program"
+    },
+    "id" : "2"
+  }, {
+    "iri" : "https://nemo.inf.ufes.br/HCIO/hcio#Atomic_User_Participation",
+    "baseIri" : "https://nemo.inf.ufes.br/HCIO/hcio",
+    "instances" : 0,
+    "description" : {
+      "en" : "Single User Participation. E.g., user touching her finger to unlock her mobile phone by using her fingerprint; user clicking a button."
+    },
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "en",
+        "value" : "HCIO User Sub-Ontology",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Atomic_User_Participation"
+    },
+    "id" : "69",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "https://nemo.inf.ufes.br/HCIO/hcio#User_Initiated_Action",
+    "baseIri" : "https://nemo.inf.ufes.br/HCIO/hcio",
+    "instances" : 0,
+    "description" : {
+      "en" : "Intentional User Action of inputting data or information using an Input Equipment. E.g., user touching her finger to unlock her mobile phone by using her fingerprint; user clicking the send button to send an email."
+    },
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "en",
+        "value" : "HCIO User Sub-Ontology",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "User_Initiated_Action"
+    },
+    "intersection" : [ "72", "73" ],
+    "attributes" : [ "intersection" ],
+    "id" : "58"
+  }, {
+    "iri" : "https://nemo.inf.ufes.br/HCIO/hcio#Interactive_Software_System",
+    "baseIri" : "https://nemo.inf.ufes.br/HCIO/hcio",
+    "instances" : 0,
+    "description" : {
+      "en" : "Software system that includes, among other programs, User Interface Programs. E.g., a home banking system and its graphical programs that deals with user interface aspects."
+    },
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "en",
+        "value" : "HCIO Interactive Computer System Sub-Ontology",
+        "type" : "label"
+      } ],
+      "SysSwO" : [ {
+        "identifier" : "SysSwO",
+        "language" : "en",
+        "value" : "subtypeOf Software System\nSoftware System subtypeOf Software Item",
+        "type" : "label"
+      } ],
+      "UFO" : [ {
+        "identifier" : "UFO",
+        "language" : "en",
+        "value" : "Software Item subtypeOf Object",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Interactive_Software_System"
+    },
+    "id" : "13"
+  }, {
+    "iri" : "https://nemo.inf.ufes.br/HCIO/hcio#Input_Equipment",
+    "baseIri" : "https://nemo.inf.ufes.br/HCIO/hcio",
+    "instances" : 0,
+    "description" : {
+      "en" : "Hardware Equipment used to receive and transmit information or data from a User (input). E.g.: keyboard, mouse, sensors."
+    },
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "en",
+        "value" : "HCIO Interactive Computer System Sub-Ontology",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Input_Equipment"
+    },
+    "id" : "78",
+    "superClasses" : [ "61" ]
+  }, {
+    "iri" : "https://nemo.inf.ufes.br/HCIO/hcio#User_Input_Resulting_State",
+    "baseIri" : "https://nemo.inf.ufes.br/HCIO/hcio",
+    "instances" : 0,
+    "description" : {
+      "en" : "A situation achieved as the result of User’s input (data or information) received by means of an Input Equipment. E.g., the user fingerprint captured by the mobile phone system; the button clicked."
+    },
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "en",
+        "value" : "HCIO HC Interaction Sub-Ontology",
+        "type" : "label"
+      } ],
+      "UFO" : [ {
+        "identifier" : "UFO",
+        "language" : "en",
+        "value" : "subtypeOf Situation",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "User_Input_Resulting_State"
+    },
+    "id" : "56"
+  }, {
+    "iri" : "https://nemo.inf.ufes.br/HCIO/hcio#User_Initiated_Participation",
+    "baseIri" : "https://nemo.inf.ufes.br/HCIO/hcio",
+    "instances" : 0,
+    "description" : {
+      "en" : "Event in which a User inputs data or information using an Input Equipment. E.g., user touching her finger to unlock her mobile phone by using her fingerprint."
+    },
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "en",
+        "value" : "HCIO User Sub-Ontology",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "User_Initiated_Participation"
+    },
+    "id" : "73",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "https://nemo.inf.ufes.br/HCIO/hcio#Interactive_Computer_System",
+    "baseIri" : "https://nemo.inf.ufes.br/HCIO/hcio",
+    "instances" : 0,
+    "description" : {
+      "en" : "Computer System that combines User Interface, Computer Machine and Loaded Software System Copies, used to process, transform, store, display or transmit information or data by receiving input, and communicating output to Users. E.g., a desktop computer, its monitor, keyboard, mouse and software systems loaded in the computer (operational system, browser, text editor, etc.); smart watch; smart mobile phone."
+    },
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "en",
+        "value" : "HCIO Interactive Computer System Sub-Ontology",
+        "type" : "label"
+      } ],
+      "SysSwO" : [ {
+        "identifier" : "SysSwO",
+        "language" : "en",
+        "value" : "subtypeOf Computer System",
+        "type" : "label"
+      } ],
+      "UFO" : [ {
+        "identifier" : "UFO",
+        "language" : "en",
+        "value" : "Computer System subtypeOf Object",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Interactive_Computer_System"
+    },
+    "subClasses" : [ "63" ],
+    "id" : "9"
+  }, {
+    "iri" : "https://nemo.inf.ufes.br/HCIO/hcio#Hardware_Equipment",
+    "baseIri" : "https://nemo.inf.ufes.br/HCIO/hcio",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "en",
+        "value" : "SysSwO",
+        "type" : "label"
+      } ],
+      "UFO" : [ {
+        "identifier" : "UFO",
+        "language" : "en",
+        "value" : "subtypeOf Object",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Hardware_Equipment"
+    },
+    "subClasses" : [ "78", "66", "64" ],
+    "id" : "61"
+  }, {
+    "iri" : "https://nemo.inf.ufes.br/HCIO/hcio#User_Participation",
+    "baseIri" : "https://nemo.inf.ufes.br/HCIO/hcio",
+    "instances" : 0,
+    "description" : {
+      "en" : "Event in which the user participates in a Human-Computer Interaction. E.g., user walking and unintentionally giving information about number of steps to a monitoring system loaded in her smart watch; user touching her finger to unlock her mobile phone by using her fingerprint; user interpreting a message from the mobile phone system informing that the captured fingerprint was not recognized."
+    },
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "en",
+        "value" : "HCIO User Sub-Ontology",
+        "type" : "label"
+      } ],
+      "UFO" : [ {
+        "identifier" : "UFO",
+        "language" : "en",
+        "value" : "subtypeOf Action Contribution",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "User_Participation"
+    },
+    "subClasses" : [ "72", "69", "73", "67", "40", "100" ],
+    "id" : "6"
+  }, {
+    "iri" : "https://nemo.inf.ufes.br/HCIO/hcio#Human-Computer_Interaction",
+    "baseIri" : "https://nemo.inf.ufes.br/HCIO/hcio",
+    "instances" : 0,
+    "description" : {
+      "en" : "An exchange of information (i.e., communication) between a User and an Interactive Computer System via the User Interface. E.g., user touching her finger to unlock her mobile phone by using her fingerprint and the mobile phone system showing a message informing that the fingerprint was not recognized; user entering a room, in a smart home, which automatically turns on the light."
+    },
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "en",
+        "value" : "HCIO HC Interaction Sub-Ontology",
+        "type" : "label"
+      } ],
+      "UFO" : [ {
+        "identifier" : "UFO",
+        "language" : "en",
+        "value" : "subtypeOf Complex Action",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Human-Computer_Interaction"
+    },
+    "id" : "1"
+  }, {
+    "iri" : "https://nemo.inf.ufes.br/HCIO/hcio#Complex_User_Participation",
+    "baseIri" : "https://nemo.inf.ufes.br/HCIO/hcio",
+    "instances" : 0,
+    "description" : {
+      "en" : "Participation composed of two or more User Participations. E.g., user typing her password and then answering security questions to log in the e-mail system."
+    },
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "en",
+        "value" : "HCIO User Sub-Ontology",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Complex_User_Participation"
+    },
+    "id" : "100",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "https://nemo.inf.ufes.br/HCIO/hcio#User",
+    "baseIri" : "https://nemo.inf.ufes.br/HCIO/hcio",
+    "instances" : 0,
+    "description" : {
+      "en" : "A Person who interacts with (or is expected to interact with) an Interactive Computer System. E.g., a person who uses a home banking system, smart watch or smart mobile phone."
+    },
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "en",
+        "value" : "HCIO User Sub-Ontology",
+        "type" : "label"
+      } ],
+      "UFO" : [ {
+        "identifier" : "UFO",
+        "language" : "en",
+        "value" : "subtypeOf Person",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "User"
+    },
+    "id" : "52"
+  }, {
+    "iri" : "https://nemo.inf.ufes.br/HCIO/hcio#User_Intention",
+    "baseIri" : "https://nemo.inf.ufes.br/HCIO/hcio",
+    "instances" : 0,
+    "description" : {
+      "en" : "An Intention that inheres in a User, causing him to perform intentional user actions. E.g., the intention to travel on vacation."
+    },
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "en",
+        "value" : "HCIO User Sub-Ontology",
+        "type" : "label"
+      } ],
+      "UFO" : [ {
+        "identifier" : "UFO",
+        "language" : "en",
+        "value" : "subtypeOf Intention",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "User_Intention"
+    },
+    "id" : "42"
+  }, {
+    "iri" : "https://nemo.inf.ufes.br/HCIO/hcio#Output_Equipment",
+    "baseIri" : "https://nemo.inf.ufes.br/HCIO/hcio",
+    "instances" : 0,
+    "description" : {
+      "en" : "Hardware Equipment used to transmit or display information or data, communicating output to Users. E. g.: Monitor, speaker, etc."
+    },
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "en",
+        "value" : "HCIO Interactive Computer System Sub-Ontology",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Output_Equipment"
+    },
+    "id" : "66",
+    "superClasses" : [ "61" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "19",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "https://nemo.inf.ufes.br/HCIO/hcio#Loaded_User_Interface_Program_Copy",
+    "baseIri" : "https://nemo.inf.ufes.br/HCIO/hcio",
+    "instances" : 0,
+    "description" : {
+      "en" : "Loaded Program Copy that is the materialization of a User Interface Program. E.g., the copy of the programs that deal with interface aspects of the home banking system loaded in the computer of a certain user."
+    },
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "en",
+        "value" : "HCIO Interactive Computer System Sub-Ontology",
+        "type" : "label"
+      } ],
+      "SysSwO" : [ {
+        "identifier" : "SysSwO",
+        "language" : "en",
+        "value" : "subtypeOf Loaded Program Copy",
+        "type" : "label"
+      } ],
+      "UFO" : [ {
+        "identifier" : "UFO",
+        "language" : "en",
+        "value" : "Loaded Program Copy subtypeOf Disposition",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Loaded_User_Interface_Program_Copy"
+    },
+    "id" : "17"
+  }, {
+    "iri" : "https://nemo.inf.ufes.br/HCIO/hcio#User_Goal",
+    "baseIri" : "https://nemo.inf.ufes.br/HCIO/hcio",
+    "instances" : 0,
+    "description" : {
+      "en" : "The propositional content of something the User wants to achieve (User Intention). E.g., the goal of buying fly tickets to go on vacation."
+    },
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "en",
+        "value" : "HCIO User Sub-Ontology",
+        "type" : "label"
+      } ],
+      "UFO" : [ {
+        "identifier" : "UFO",
+        "language" : "en",
+        "value" : "subtypeOf Goal",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "User_Goal"
+    },
+    "id" : "54"
+  }, {
+    "iri" : "https://nemo.inf.ufes.br/HCIO/hcio#Intentional_User_Participation__User_Action",
+    "baseIri" : "https://nemo.inf.ufes.br/HCIO/hcio",
+    "instances" : 0,
+    "description" : {
+      "en" : "User participation intentionally performed. E.g., user touching her finger to unlock her mobile phone by using her fingerprint; user clicking the send button to send an e-mail."
+    },
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "en",
+        "value" : "HCIO User Sub-Ontology",
+        "type" : "label"
+      } ],
+      "UFO" : [ {
+        "identifier" : "UFO",
+        "language" : "en",
+        "value" : "subtypeOf Action Contribution",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Intentional_User_Participation__User_Action"
+    },
+    "id" : "72",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "https://nemo.inf.ufes.br/HCIO/hcio#IO_Equipment",
+    "baseIri" : "https://nemo.inf.ufes.br/HCIO/hcio",
+    "instances" : 0,
+    "description" : {
+      "en" : "Input and Output Equipment"
+    },
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "en",
+        "value" : "HCIO Interactive Computer System Sub-Ontology",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "IO_Equipment"
+    },
+    "intersection" : [ "78", "66" ],
+    "attributes" : [ "intersection" ],
+    "id" : "192"
+  }, {
+    "iri" : "https://nemo.inf.ufes.br/HCIO/hcio#User_Observable_State",
+    "baseIri" : "https://nemo.inf.ufes.br/HCIO/hcio",
+    "instances" : 0,
+    "description" : {
+      "en" : "A situation (an Observable State) perceivable by Users, typically achieved as the result (output) of a Program Copy Execution, communicated or presented by an Output Equipment. E.g., a message shown in the mobile phone screen informing the user that the captured fingerprint was not recognized, smart watch vibrating; sounds emitted by the mobile phone."
+    },
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "en",
+        "value" : "HCIO Interactive HC Interaction Sub-Ontology",
+        "type" : "label"
+      } ],
+      "SysSwO" : [ {
+        "identifier" : "SysSwO",
+        "language" : "en",
+        "value" : "subtypeOf Computing Resulting State",
+        "type" : "label"
+      } ],
+      "UFO" : [ {
+        "identifier" : "UFO",
+        "language" : "en",
+        "value" : "Computing Resulting State subtypeOf Situation",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "User_Observable_State"
+    },
+    "id" : "4"
+  }, {
+    "iri" : "https://nemo.inf.ufes.br/HCIO/hcio#User_Interface",
+    "baseIri" : "https://nemo.inf.ufes.br/HCIO/hcio",
+    "instances" : 0,
+    "description" : {
+      "en" : "All components of an interactive system (software or hardware) that provide information and controls for the user to accomplish specific tasks with the interactive system. E.g., mouse, keyboard, monitor, sensors and the software that handle them."
+    },
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "en",
+        "value" : "HCIO Interactive Computer System Sub-Ontology",
+        "type" : "label"
+      } ],
+      "UFO" : [ {
+        "identifier" : "UFO",
+        "language" : "en",
+        "value" : "subtypeOf Object",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "User_Interface"
+    },
+    "id" : "44"
+  }, {
+    "iri" : "https://nemo.inf.ufes.br/HCIO/hcio#Program_Copy_Execution",
+    "baseIri" : "https://nemo.inf.ufes.br/HCIO/hcio",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "en",
+        "value" : "SysSwO",
+        "type" : "label"
+      } ],
+      "UFO" : [ {
+        "identifier" : "UFO",
+        "language" : "en",
+        "value" : "subtypeOf Event",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Program_Copy_Execution"
+    },
+    "id" : "8"
+  }, {
+    "iri" : "https://nemo.inf.ufes.br/HCIO/hcio#User_Interpretation",
+    "baseIri" : "https://nemo.inf.ufes.br/HCIO/hcio",
+    "instances" : 0,
+    "description" : {
+      "en" : "Event in which a User interprets the system output. E.g., user interpreting a message from the mobile phone system informing that the captured fingerprint was not recognized; user sensing her smart watch vibrate; user hearing the notification sound of new message."
+    },
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "en",
+        "value" : "HCIO User Sub-Ontology",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "User_Interpretation"
+    },
+    "id" : "67",
+    "superClasses" : [ "6" ]
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "3",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "5",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "7",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "10",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "12",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "14",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "16",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "18",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "41",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "43",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "45",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "46",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "47",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "48",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "49",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "50",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "51",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "53",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "55",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "57",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "59",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "60",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "62",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "65",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "68",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "70",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "71",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "74",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "75",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "76",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "77",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "79",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "80",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "81",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "82",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "83",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "84",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "85",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "86",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "87",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "88",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "89",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "90",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "91",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "92",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "93",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "94",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "95",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "96",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "97",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "98",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "99",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "101",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "102",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "103",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "104",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "105",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "106",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "107",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "108",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "109",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "110",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "111",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "112",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "113",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "114",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "115",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "116",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "117",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "118",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "119",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "120",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "121",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "122",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "123",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "124",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "125",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "126",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "127",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "128",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "129",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "130",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "131",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "132",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "133",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "134",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "135",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "136",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "137",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "138",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "139",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "140",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "141",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "142",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "143",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "144",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "145",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "146",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "147",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "148",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "149",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "150",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "151",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "152",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "153",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "154",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "155",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "156",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "157",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "158",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "159",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "160",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "161",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "162",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "163",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "164",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "165",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "166",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "167",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "168",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "169",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "170",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "171",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "172",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "173",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "174",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "175",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "176",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "177",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "178",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "179",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "180",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "181",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "182",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "183",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "184",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "185",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "186",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "187",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "188",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "189",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "190",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "191",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "193",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "194",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "195",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "196",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "197",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "198",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "199",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "200",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "201",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "202",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "203",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "204",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "205",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "206",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "207",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "208",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "209",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "210",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "211",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "212",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "213",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "214",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "215",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "216",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "217",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "218",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "219",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "220",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "221",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "222",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "223",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "224",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "225",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "226",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "227",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "228",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "229",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "230",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "231",
+    "type" : "owl:disjointWith"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "2",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "0"
+  }, {
+    "range" : "1",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "3"
+  }, {
+    "range" : "6",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "5"
+  }, {
+    "range" : "9",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "7"
+  }, {
+    "range" : "8",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "10"
+  }, {
+    "range" : "13",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "12"
+  }, {
+    "range" : "15",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "14"
+  }, {
+    "range" : "17",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "16"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "topObjectProperty"
+    },
+    "domain" : "19",
+    "subproperty" : [ "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "18"
+  }, {
+    "range" : "42",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "41"
+  }, {
+    "range" : "44",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "43"
+  }, {
+    "range" : "9",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "45"
+  }, {
+    "range" : "11",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "46"
+  }, {
+    "range" : "13",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "47"
+  }, {
+    "range" : "15",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "48"
+  }, {
+    "range" : "17",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "49"
+  }, {
+    "range" : "8",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "50"
+  }, {
+    "range" : "52",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "51"
+  }, {
+    "range" : "1",
+    "domain" : "54",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "53"
+  }, {
+    "range" : "56",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "55"
+  }, {
+    "range" : "42",
+    "domain" : "58",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "57"
+  }, {
+    "range" : "58",
+    "domain" : "54",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "59"
+  }, {
+    "range" : "61",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "60"
+  }, {
+    "range" : "61",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "62"
+  }, {
+    "iri" : "https://nemo.inf.ufes.br/HCIO/hcio#supports",
+    "baseIri" : "https://nemo.inf.ufes.br/HCIO/hcio",
+    "range" : "67",
+    "label" : {
+      "IRI-based" : "supports"
+    },
+    "superproperty" : [ "18" ],
+    "domain" : "66",
+    "attributes" : [ "object", "someValues", "functional" ],
+    "id" : "65"
+  }, {
+    "iri" : "https://nemo.inf.ufes.br/HCIO/hcio#connects",
+    "baseIri" : "https://nemo.inf.ufes.br/HCIO/hcio",
+    "range" : "61",
+    "label" : {
+      "IRI-based" : "connects"
+    },
+    "superproperty" : [ "18" ],
+    "domain" : "64",
+    "attributes" : [ "object", "someValues", "functional" ],
+    "id" : "68"
+  }, {
+    "iri" : "https://nemo.inf.ufes.br/HCIO/hcio#triggers",
+    "baseIri" : "https://nemo.inf.ufes.br/HCIO/hcio",
+    "range" : "67",
+    "label" : {
+      "IRI-based" : "triggers"
+    },
+    "superproperty" : [ "18" ],
+    "domain" : "4",
+    "attributes" : [ "object", "someValues", "functional" ],
+    "id" : "70"
+  }, {
+    "iri" : "https://nemo.inf.ufes.br/HCIO/hcio#triggers",
+    "baseIri" : "https://nemo.inf.ufes.br/HCIO/hcio",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "triggers"
+    },
+    "superproperty" : [ "18" ],
+    "domain" : "4",
+    "attributes" : [ "object", "someValues", "functional" ],
+    "id" : "71"
+  }, {
+    "iri" : "https://nemo.inf.ufes.br/HCIO/hcio#composedOf",
+    "baseIri" : "https://nemo.inf.ufes.br/HCIO/hcio",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "composedOf"
+    },
+    "superproperty" : [ "18" ],
+    "domain" : "1",
+    "attributes" : [ "object", "reflexive", "symmetric", "someValues" ],
+    "id" : "74"
+  }, {
+    "iri" : "https://nemo.inf.ufes.br/HCIO/hcio#composedOf",
+    "baseIri" : "https://nemo.inf.ufes.br/HCIO/hcio",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "composedOf"
+    },
+    "superproperty" : [ "18" ],
+    "domain" : "1",
+    "attributes" : [ "object", "reflexive", "symmetric", "someValues" ],
+    "id" : "75"
+  }, {
+    "iri" : "https://nemo.inf.ufes.br/HCIO/hcio#presents",
+    "baseIri" : "https://nemo.inf.ufes.br/HCIO/hcio",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "presents"
+    },
+    "superproperty" : [ "18" ],
+    "domain" : "66",
+    "attributes" : [ "object", "someValues", "functional" ],
+    "id" : "76"
+  }, {
+    "range" : "64",
+    "domain" : "78",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "77"
+  }, {
+    "range" : "64",
+    "domain" : "66",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "79"
+  }, {
+    "range" : "66",
+    "domain" : "78",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "80"
+  }, {
+    "iri" : "https://nemo.inf.ufes.br/HCIO/hcio#inheresIn",
+    "baseIri" : "https://nemo.inf.ufes.br/HCIO/hcio",
+    "range" : "52",
+    "label" : {
+      "IRI-based" : "inheresIn"
+    },
+    "superproperty" : [ "18" ],
+    "domain" : "42",
+    "attributes" : [ "object", "someValues", "functional" ],
+    "id" : "81"
+  }, {
+    "iri" : "https://nemo.inf.ufes.br/HCIO/hcio#triggers",
+    "baseIri" : "https://nemo.inf.ufes.br/HCIO/hcio",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "triggers"
+    },
+    "superproperty" : [ "18" ],
+    "domain" : "56",
+    "attributes" : [ "object", "someValues", "functional" ],
+    "id" : "82"
+  }, {
+    "iri" : "https://nemo.inf.ufes.br/HCIO/hcio#inheresIn",
+    "baseIri" : "https://nemo.inf.ufes.br/HCIO/hcio",
+    "range" : "64",
+    "label" : {
+      "IRI-based" : "inheresIn"
+    },
+    "superproperty" : [ "18" ],
+    "domain" : "17",
+    "attributes" : [ "object", "someValues", "functional" ],
+    "id" : "83"
+  }, {
+    "iri" : "https://nemo.inf.ufes.br/HCIO/hcio#handles",
+    "baseIri" : "https://nemo.inf.ufes.br/HCIO/hcio",
+    "range" : "44",
+    "label" : {
+      "IRI-based" : "handles"
+    },
+    "superproperty" : [ "18" ],
+    "domain" : "17",
+    "attributes" : [ "object", "someValues", "functional" ],
+    "id" : "84"
+  }, {
+    "iri" : "https://nemo.inf.ufes.br/HCIO/hcio#materializationOf",
+    "baseIri" : "https://nemo.inf.ufes.br/HCIO/hcio",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "materializationOf"
+    },
+    "superproperty" : [ "18" ],
+    "domain" : "17",
+    "attributes" : [ "object", "someValues", "functional" ],
+    "id" : "85"
+  }, {
+    "iri" : "https://nemo.inf.ufes.br/HCIO/hcio#causedBy",
+    "baseIri" : "https://nemo.inf.ufes.br/HCIO/hcio",
+    "range" : "42",
+    "label" : {
+      "IRI-based" : "causedBy"
+    },
+    "superproperty" : [ "18" ],
+    "domain" : "72",
+    "attributes" : [ "object", "someValues", "functional" ],
+    "id" : "86"
+  }, {
+    "iri" : "https://nemo.inf.ufes.br/HCIO/hcio#executionOf",
+    "baseIri" : "https://nemo.inf.ufes.br/HCIO/hcio",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "executionOf"
+    },
+    "superproperty" : [ "18" ],
+    "domain" : "8",
+    "attributes" : [ "object", "someValues", "functional" ],
+    "id" : "87"
+  }, {
+    "iri" : "https://nemo.inf.ufes.br/HCIO/hcio#directlyCauses",
+    "baseIri" : "https://nemo.inf.ufes.br/HCIO/hcio",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "directlyCauses"
+    },
+    "domain" : "8",
+    "attributes" : [ "object", "reflexive", "transitive", "someValues" ],
+    "id" : "88"
+  }, {
+    "iri" : "https://nemo.inf.ufes.br/HCIO/hcio#directlyCauses",
+    "baseIri" : "https://nemo.inf.ufes.br/HCIO/hcio",
+    "range" : "67",
+    "label" : {
+      "IRI-based" : "directlyCauses"
+    },
+    "domain" : "8",
+    "attributes" : [ "object", "reflexive", "transitive", "someValues" ],
+    "id" : "89"
+  }, {
+    "iri" : "https://nemo.inf.ufes.br/HCIO/hcio#bringsAbout",
+    "baseIri" : "https://nemo.inf.ufes.br/HCIO/hcio",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "bringsAbout"
+    },
+    "superproperty" : [ "18" ],
+    "domain" : "8",
+    "attributes" : [ "object", "someValues", "functional" ],
+    "id" : "90"
+  }, {
+    "iri" : "https://nemo.inf.ufes.br/HCIO/hcio#composedOf",
+    "baseIri" : "https://nemo.inf.ufes.br/HCIO/hcio",
+    "range" : "44",
+    "label" : {
+      "IRI-based" : "composedOf"
+    },
+    "superproperty" : [ "18" ],
+    "domain" : "9",
+    "attributes" : [ "object", "reflexive", "symmetric", "someValues" ],
+    "id" : "91"
+  }, {
+    "iri" : "https://nemo.inf.ufes.br/HCIO/hcio#composedOf",
+    "baseIri" : "https://nemo.inf.ufes.br/HCIO/hcio",
+    "range" : "64",
+    "label" : {
+      "IRI-based" : "composedOf"
+    },
+    "superproperty" : [ "18" ],
+    "domain" : "9",
+    "attributes" : [ "object", "reflexive", "symmetric", "someValues" ],
+    "id" : "92"
+  }, {
+    "iri" : "https://nemo.inf.ufes.br/HCIO/hcio#has",
+    "baseIri" : "https://nemo.inf.ufes.br/HCIO/hcio",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "has"
+    },
+    "superproperty" : [ "18" ],
+    "domain" : "9",
+    "attributes" : [ "object", "someValues", "functional" ],
+    "id" : "93"
+  }, {
+    "iri" : "https://nemo.inf.ufes.br/HCIO/hcio#composedOf",
+    "baseIri" : "https://nemo.inf.ufes.br/HCIO/hcio",
+    "range" : "61",
+    "label" : {
+      "IRI-based" : "composedOf"
+    },
+    "superproperty" : [ "18" ],
+    "domain" : "9",
+    "attributes" : [ "object", "reflexive", "symmetric", "someValues" ],
+    "id" : "94"
+  }, {
+    "iri" : "https://nemo.inf.ufes.br/HCIO/hcio#constitutedOf",
+    "baseIri" : "https://nemo.inf.ufes.br/HCIO/hcio",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "constitutedOf"
+    },
+    "superproperty" : [ "18" ],
+    "domain" : "13",
+    "attributes" : [ "object", "someValues", "functional" ],
+    "id" : "95"
+  }, {
+    "range" : "40",
+    "domain" : "72",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "96"
+  }, {
+    "iri" : "https://nemo.inf.ufes.br/HCIO/hcio#composedOf",
+    "baseIri" : "https://nemo.inf.ufes.br/HCIO/hcio",
+    "range" : "66",
+    "label" : {
+      "IRI-based" : "composedOf"
+    },
+    "superproperty" : [ "18" ],
+    "domain" : "44",
+    "attributes" : [ "object", "reflexive", "symmetric", "someValues" ],
+    "id" : "97"
+  }, {
+    "iri" : "https://nemo.inf.ufes.br/HCIO/hcio#composedOf",
+    "baseIri" : "https://nemo.inf.ufes.br/HCIO/hcio",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "composedOf"
+    },
+    "superproperty" : [ "18" ],
+    "domain" : "63",
+    "attributes" : [ "object", "reflexive", "symmetric", "someValues" ],
+    "id" : "98"
+  }, {
+    "iri" : "https://nemo.inf.ufes.br/HCIO/hcio#composedOf",
+    "baseIri" : "https://nemo.inf.ufes.br/HCIO/hcio",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "composedOf"
+    },
+    "superproperty" : [ "18" ],
+    "domain" : "100",
+    "attributes" : [ "object", "reflexive", "symmetric", "someValues" ],
+    "id" : "99"
+  }, {
+    "range" : "100",
+    "domain" : "69",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "101"
+  }, {
+    "range" : "42",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "102"
+  }, {
+    "range" : "8",
+    "domain" : "44",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "103"
+  }, {
+    "range" : "2",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "104"
+  }, {
+    "range" : "8",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "105"
+  }, {
+    "range" : "8",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "106"
+  }, {
+    "iri" : "https://nemo.inf.ufes.br/HCIO/hcio#propositionalContentOf",
+    "baseIri" : "https://nemo.inf.ufes.br/HCIO/hcio",
+    "range" : "42",
+    "label" : {
+      "IRI-based" : "propositionalContentOf"
+    },
+    "superproperty" : [ "18" ],
+    "domain" : "54",
+    "attributes" : [ "object", "someValues", "functional" ],
+    "id" : "107"
+  }, {
+    "iri" : "https://nemo.inf.ufes.br/HCIO/hcio#composedOf",
+    "baseIri" : "https://nemo.inf.ufes.br/HCIO/hcio",
+    "range" : "78",
+    "label" : {
+      "IRI-based" : "composedOf"
+    },
+    "superproperty" : [ "18" ],
+    "domain" : "44",
+    "attributes" : [ "object", "reflexive", "symmetric", "someValues" ],
+    "id" : "108"
+  }, {
+    "range" : "52",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "109"
+  }, {
+    "range" : "8",
+    "domain" : "54",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "110"
+  }, {
+    "range" : "56",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "111"
+  }, {
+    "range" : "56",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "112"
+  }, {
+    "range" : "11",
+    "domain" : "54",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "113"
+  }, {
+    "range" : "52",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "114"
+  }, {
+    "range" : "13",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "115"
+  }, {
+    "range" : "9",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "116"
+  }, {
+    "range" : "17",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "117"
+  }, {
+    "range" : "15",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "118"
+  }, {
+    "range" : "9",
+    "domain" : "44",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "119"
+  }, {
+    "range" : "9",
+    "domain" : "42",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "120"
+  }, {
+    "range" : "9",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "121"
+  }, {
+    "range" : "2",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "122"
+  }, {
+    "range" : "9",
+    "domain" : "54",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "123"
+  }, {
+    "range" : "52",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "124"
+  }, {
+    "range" : "56",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "125"
+  }, {
+    "range" : "6",
+    "domain" : "67",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "126"
+  }, {
+    "range" : "13",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "127"
+  }, {
+    "range" : "6",
+    "domain" : "40",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "128"
+  }, {
+    "range" : "9",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "129"
+  }, {
+    "range" : "6",
+    "domain" : "100",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "130"
+  }, {
+    "range" : "17",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "131"
+  }, {
+    "range" : "15",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "132"
+  }, {
+    "range" : "61",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "133"
+  }, {
+    "range" : "61",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "134"
+  }, {
+    "range" : "61",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "135"
+  }, {
+    "range" : "15",
+    "domain" : "42",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "136"
+  }, {
+    "range" : "6",
+    "domain" : "69",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "137"
+  }, {
+    "range" : "6",
+    "domain" : "73",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "138"
+  }, {
+    "range" : "2",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "139"
+  }, {
+    "range" : "15",
+    "domain" : "44",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "140"
+  }, {
+    "range" : "52",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "141"
+  }, {
+    "iri" : "https://nemo.inf.ufes.br/HCIO/hcio#directlyCauses",
+    "baseIri" : "https://nemo.inf.ufes.br/HCIO/hcio",
+    "range" : "73",
+    "label" : {
+      "IRI-based" : "directlyCauses"
+    },
+    "domain" : "67",
+    "attributes" : [ "object", "reflexive", "transitive", "someValues" ],
+    "id" : "142"
+  }, {
+    "range" : "17",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "143"
+  }, {
+    "iri" : "https://nemo.inf.ufes.br/HCIO/hcio#mayEvaluateAchievementOf",
+    "baseIri" : "https://nemo.inf.ufes.br/HCIO/hcio",
+    "range" : "54",
+    "label" : {
+      "IRI-based" : "mayEvaluateAchievementOf"
+    },
+    "superproperty" : [ "18" ],
+    "domain" : "67",
+    "attributes" : [ "object", "someValues", "functional" ],
+    "id" : "144"
+  }, {
+    "range" : "56",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "145"
+  }, {
+    "range" : "15",
+    "domain" : "54",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "146"
+  }, {
+    "range" : "9",
+    "domain" : "63",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "147"
+  }, {
+    "range" : "2",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "148"
+  }, {
+    "range" : "61",
+    "domain" : "78",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "149"
+  }, {
+    "range" : "13",
+    "domain" : "44",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "150"
+  }, {
+    "range" : "61",
+    "domain" : "66",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "151"
+  }, {
+    "range" : "13",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "152"
+  }, {
+    "range" : "61",
+    "domain" : "64",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "153"
+  }, {
+    "range" : "13",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "154"
+  }, {
+    "range" : "6",
+    "domain" : "72",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "155"
+  }, {
+    "iri" : "https://nemo.inf.ufes.br/HCIO/hcio#includes",
+    "baseIri" : "https://nemo.inf.ufes.br/HCIO/hcio",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "includes"
+    },
+    "superproperty" : [ "18" ],
+    "domain" : "15",
+    "attributes" : [ "object", "someValues", "functional" ],
+    "id" : "156"
+  }, {
+    "iri" : "https://nemo.inf.ufes.br/HCIO/hcio#materializationOf",
+    "baseIri" : "https://nemo.inf.ufes.br/HCIO/hcio",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "materializationOf"
+    },
+    "superproperty" : [ "18" ],
+    "domain" : "15",
+    "attributes" : [ "object", "someValues", "functional" ],
+    "id" : "157"
+  }, {
+    "range" : "13",
+    "domain" : "42",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "158"
+  }, {
+    "iri" : "https://nemo.inf.ufes.br/HCIO/hcio#interprets",
+    "baseIri" : "https://nemo.inf.ufes.br/HCIO/hcio",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "interprets"
+    },
+    "superproperty" : [ "18" ],
+    "domain" : "67",
+    "attributes" : [ "object", "someValues", "functional" ],
+    "id" : "159"
+  }, {
+    "range" : "13",
+    "domain" : "56",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "160"
+  }, {
+    "range" : "13",
+    "domain" : "54",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "161"
+  }, {
+    "range" : "13",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "162"
+  }, {
+    "range" : "11",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "163"
+  }, {
+    "iri" : "https://nemo.inf.ufes.br/HCIO/hcio#participationOf",
+    "baseIri" : "https://nemo.inf.ufes.br/HCIO/hcio",
+    "range" : "52",
+    "label" : {
+      "IRI-based" : "participationOf"
+    },
+    "superproperty" : [ "18" ],
+    "domain" : "6",
+    "attributes" : [ "object", "transitive", "someValues" ],
+    "id" : "164"
+  }, {
+    "range" : "52",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "165"
+  }, {
+    "iri" : "https://nemo.inf.ufes.br/HCIO/hcio#directlyCauses",
+    "baseIri" : "https://nemo.inf.ufes.br/HCIO/hcio",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "directlyCauses"
+    },
+    "domain" : "73",
+    "attributes" : [ "object", "reflexive", "transitive", "someValues" ],
+    "id" : "166"
+  }, {
+    "range" : "17",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "167"
+  }, {
+    "iri" : "https://nemo.inf.ufes.br/HCIO/hcio#isDoneUsing",
+    "baseIri" : "https://nemo.inf.ufes.br/HCIO/hcio",
+    "range" : "78",
+    "label" : {
+      "IRI-based" : "isDoneUsing"
+    },
+    "superproperty" : [ "18" ],
+    "domain" : "73",
+    "attributes" : [ "object", "someValues", "functional" ],
+    "id" : "168"
+  }, {
+    "range" : "11",
+    "domain" : "44",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "169"
+  }, {
+    "range" : "67",
+    "domain" : "73",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "170"
+  }, {
+    "range" : "42",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "171"
+  }, {
+    "iri" : "https://nemo.inf.ufes.br/HCIO/hcio#causes",
+    "baseIri" : "https://nemo.inf.ufes.br/HCIO/hcio",
+    "range" : "67",
+    "label" : {
+      "IRI-based" : "causes"
+    },
+    "superproperty" : [ "18" ],
+    "domain" : "73",
+    "attributes" : [ "object", "transitive", "someValues" ],
+    "id" : "172"
+  }, {
+    "range" : "11",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "173"
+  }, {
+    "iri" : "https://nemo.inf.ufes.br/HCIO/hcio#bringsAbout",
+    "baseIri" : "https://nemo.inf.ufes.br/HCIO/hcio",
+    "range" : "56",
+    "label" : {
+      "IRI-based" : "bringsAbout"
+    },
+    "superproperty" : [ "18" ],
+    "domain" : "73",
+    "attributes" : [ "object", "someValues", "functional" ],
+    "id" : "174"
+  }, {
+    "range" : "2",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "175"
+  }, {
+    "iri" : "https://nemo.inf.ufes.br/HCIO/hcio#inheresIn",
+    "baseIri" : "https://nemo.inf.ufes.br/HCIO/hcio",
+    "range" : "64",
+    "label" : {
+      "IRI-based" : "inheresIn"
+    },
+    "superproperty" : [ "18" ],
+    "domain" : "15",
+    "attributes" : [ "object", "someValues", "functional" ],
+    "id" : "176"
+  }, {
+    "range" : "44",
+    "domain" : "54",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "177"
+  }, {
+    "range" : "42",
+    "domain" : "54",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "178"
+  }, {
+    "range" : "4",
+    "domain" : "54",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "179"
+  }, {
+    "range" : "2",
+    "domain" : "54",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "180"
+  }, {
+    "range" : "56",
+    "domain" : "54",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "181"
+  }, {
+    "range" : "52",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "182"
+  }, {
+    "range" : "52",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "183"
+  }, {
+    "range" : "52",
+    "domain" : "42",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "184"
+  }, {
+    "range" : "52",
+    "domain" : "56",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "185"
+  }, {
+    "range" : "52",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "186"
+  }, {
+    "range" : "52",
+    "domain" : "44",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "187"
+  }, {
+    "range" : "17",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "188"
+  }, {
+    "range" : "2",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "189"
+  }, {
+    "range" : "52",
+    "domain" : "54",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "190"
+  }, {
+    "range" : "17",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "191"
+  }, {
+    "range" : "17",
+    "domain" : "42",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "193"
+  }, {
+    "range" : "17",
+    "domain" : "56",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "194"
+  }, {
+    "range" : "17",
+    "domain" : "44",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "195"
+  }, {
+    "range" : "15",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "196"
+  }, {
+    "range" : "15",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "197"
+  }, {
+    "range" : "17",
+    "domain" : "54",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "198"
+  }, {
+    "range" : "52",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "199"
+  }, {
+    "range" : "64",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "200"
+  }, {
+    "range" : "64",
+    "domain" : "42",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "201"
+  }, {
+    "range" : "52",
+    "domain" : "58",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "202"
+  }, {
+    "range" : "64",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "203"
+  }, {
+    "range" : "6",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "204"
+  }, {
+    "range" : "64",
+    "domain" : "54",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "205"
+  }, {
+    "range" : "52",
+    "domain" : "64",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "206"
+  }, {
+    "range" : "61",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "207"
+  }, {
+    "range" : "61",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "208"
+  }, {
+    "range" : "61",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "209"
+  }, {
+    "range" : "52",
+    "domain" : "61",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "210"
+  }, {
+    "range" : "61",
+    "domain" : "54",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "211"
+  }, {
+    "range" : "61",
+    "domain" : "56",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "212"
+  }, {
+    "range" : "61",
+    "domain" : "42",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "213"
+  }, {
+    "range" : "61",
+    "domain" : "44",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "214"
+  }, {
+    "range" : "61",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "215"
+  }, {
+    "range" : "61",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "216"
+  }, {
+    "range" : "44",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "217"
+  }, {
+    "range" : "44",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "218"
+  }, {
+    "range" : "2",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "219"
+  }, {
+    "range" : "2",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "220"
+  }, {
+    "range" : "42",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "221"
+  }, {
+    "range" : "2",
+    "domain" : "42",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "222"
+  }, {
+    "range" : "2",
+    "domain" : "44",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "223"
+  }, {
+    "range" : "42",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "224"
+  }, {
+    "range" : "42",
+    "domain" : "44",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "225"
+  }, {
+    "range" : "56",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "226"
+  }, {
+    "range" : "56",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "227"
+  }, {
+    "range" : "56",
+    "domain" : "42",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "228"
+  }, {
+    "range" : "6",
+    "domain" : "54",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "229"
+  }, {
+    "range" : "2",
+    "domain" : "56",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "230"
+  }, {
+    "range" : "56",
+    "domain" : "44",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "231"
+  } ]
+}
